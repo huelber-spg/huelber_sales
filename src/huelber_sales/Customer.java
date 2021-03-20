@@ -4,12 +4,24 @@ public class Customer
 {
 	private int customerID;
 	private String firstName;
+	private double credit;
 
-	public Customer(int customerID, String firstName)
+	public Customer(int customerID, String firstName, double credit)
 	{
 		super();
 		this.customerID = customerID;
 		this.firstName = firstName;
+		this.credit = credit;
+	}
+
+	public double getCredit()
+	{
+		return credit;
+	}
+
+	public void setCredit(double credit)
+	{
+		this.credit = credit;
 	}
 	
 	public int getCustomerID()
